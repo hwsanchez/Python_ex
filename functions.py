@@ -1,13 +1,13 @@
-#Introduction to functions in Python
-#First Example: with a parameter and without a return
-def greet(lang):
-    if lang == 'es':
-        print('Hola!')
-    elif lang == 'fr':
-        print('Bonjour!')
-    elif lang == 'en':
-        print('Hello!')
-    else:
-        print('Invalid Language!')
-language = input('Choose a Language (en = Engilsh, es = Espanol, fr = francois): ')
-greet(language)
+#Built-in functions and Lists
+nums = [3, 41, 12, 9, 74, 15]
+print(nums)
+#prints the length of the list
+print(len(nums))
+#print the maximum of the list
+print(max(nums))
+#prints the minimum of the List
+print(min(nums))
+#prints the sum of all elements
+print(sum(nums))
+#using 2 functions to get the average
+print(sum(nums)/len(nums))

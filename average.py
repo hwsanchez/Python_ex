@@ -1,9 +1,25 @@
-#This loop find the total sum and the average of values in an Array:
+#Here are 2 ways to compute averages:
+#Traditional way:
+
+suma = 0
 count = 0
-sum = 0
-print('Before:', count, sum)
-for value in [9, 41, 12, 3, 74, 15] :
+while True :
+    inp = input('1) Enter a number (type done to end): ')
+    if inp == 'done'  :
+        break
     count = count + 1
-    sum = sum + value
-    print(count, sum, value)
-print('After:', count, sum, sum / count)
+    suma = suma + float(inp)
+average = suma / count
+print('Average:', average)
+
+
+#same thing but with Lists:
+#NOT WORKING AND DONT KNOW WHY!!!!
+numlist = list()
+while True :
+    inp = input('2) Enter a number (type done to end): ')
+    if inp == 'done' : break
+    value = float(inp)
+    numlist.append(value)
+newAverage = sum(numlist) / len(numlist)
+print('Average:', newAverage)
